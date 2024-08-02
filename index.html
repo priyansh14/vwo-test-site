@@ -26,6 +26,18 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
 		"pagevisited": true
 	});
 </script>
+<script>
+	// Do not change anything in the following two lines
+	window.VWO = window.VWO || [];
+	VWO.event = VWO.event || function () {VWO.push(["event"].concat([].slice.call(arguments)))};
+
+	// Replace the property values with your actual values
+	VWO.event("purchase", {
+		"productId": "122,123,125",
+		"flag": true,
+		"price": 200
+	});
+</script>
     </head>
     <body>
         <h1>This is my test site</h1>
